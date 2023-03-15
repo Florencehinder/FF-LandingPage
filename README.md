@@ -1,4 +1,4 @@
-# florencehinder.github.io
-Futures Finder Career Booking Page
+# futurefinder.app
+Future Finder Career Booking Page
 
 Using material design + tailwind 
