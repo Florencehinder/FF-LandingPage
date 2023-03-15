@@ -1,4 +1,4 @@
 # florencehinder.github.io
-Futures Finder Career Coaching Landing Page
+Futures Finder Career Booking Page
 
 Using material design + tailwind 
