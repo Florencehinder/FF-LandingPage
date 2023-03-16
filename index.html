@@ -39,7 +39,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
     />
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="media/favicon.png" />
   </head>
   <body class="bg-gray-100 font-sans leading-normal tracking-normal">
     <!-- Google Tag Manager (noscript) -->
@@ -52,11 +52,51 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Fixed header with logo and company name -->
+    <header class="bg-white py-4 px-6 shadow-md fixed w-full top-0 z-10">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center">
+          <img
+            class="w-10 h-10 rounded-full mr-4"
+            src="media/future-finder-icon.svg"
+            alt="Future Finder Logo"
+          />
+          <span
+            class="text-2xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
+            >Future Finder</span
+          >
+        </div>
+        <div>
+          <button
+            class="bg-gradient-to-r from-blue-500 to-purple-500 hover:bg-indigo-700 text-white py-4 px-4 rounded text-lg"
+          >
+            <!-- Calendly link widget begin -->
+            <link
+              href="https://assets.calendly.com/assets/external/widget.css"
+              rel="stylesheet"
+            />
+            <script
+              src="https://assets.calendly.com/assets/external/widget.js"
+              type="text/javascript"
+              async
+            ></script>
+            <a
+              href=""
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/futuresfinder/30min'});return false;"
+              >Book a free career consultation!</a
+            >
+            <!-- Calendly link widget end -->
+          </button>
+        </div>
+      </div>
+    </header>
+
     <section class="min-h-screen">
       <div class="container mx-auto px-12 mt-60 text-center">
         <img
           class="w-40 h-40 rounded-full mx-auto bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
-          src="images/future-finder-icon.svg"
+          src="media/future-finder-icon.svg"
           alt="Future Finder Logo"
         />
         <h1
@@ -68,8 +108,20 @@
           Our AI-powered career recommendation engine helps you find the perfect
           job based on your skills and interests.
         </p>
+        <video
+          class="mx-auto rounded-lg shadow-lg"
+          width="70%"
+          height="auto"
+          autoplay
+          loop
+          muted
+        >
+          <source src="media/future-finder-demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
         <button
-          class="bg-gradient-to-r from-blue-500 to-purple-500 hover:bg-indigo-700 text-white py-4 px-4 rounded mb-20 text-lg"
+          class="bg-gradient-to-r from-blue-500 to-purple-500 hover:bg-indigo-700 text-white py-4 px-4 rounded mb-20 text-lg mt-8"
         >
           <!-- Calendly link widget begin -->
           <link
