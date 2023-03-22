@@ -41,7 +41,7 @@
     />
     <link rel="shortcut icon" type="image/png" href="media/favicon.png" />
   </head>
-  <body class="bg-white font-sans">
+  <body class="bg-white font-sans leading-normal tracking-normal">
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -60,12 +60,12 @@
       <div class="container mx-auto flex items-center justify-between">
         <div class="flex items-center">
           <img
-            class="hidden sm:block w-10 h-10 rounded-full mr-4"
+            class="w-10 h-10 rounded-full mr-4"
             src="media/future-finder-icon.svg"
             alt="Future Finder Logo"
           />
           <span
-            class="hidden sm:block text-2xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
+            class="text-2xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
             >Future Finder</span
           >
         </div>
@@ -78,7 +78,7 @@
             <input
               type="text"
               name="email"
-              placeholder="Enter your email"
+              placeholder="Your Email"
               class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
             />
             <input
@@ -101,8 +101,8 @@
         </div>
       </div>
     </header>
-    <div class = "flex flex-col items-center">
-    <section class="flex-1 h-auto overflow-hidden">
+
+    <section class="shadow h-screen">
       <div class="container mx-auto px-12 mt-60 text-center">
         <img
           class="w-40 h-40 rounded-full mx-auto bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
@@ -114,18 +114,11 @@
         >
           Future Finder
         </h1>
-        <p
-          class="text-gray-400 text-3xl mb-8 text-center sm:w-100 md:w-1/2 lg:md:w-1/2 mx-auto"
-        >
-          Our AI-powered career assistant helps you explore more career options
-          based on your skills and interests.
+        <p class="text-gray-600 text-3xl mb-8">
+          Our AI-powered career advisor helps you find the perfect job based on
+          your skills and interests.
         </p>
-        <video
-          class="sm:w-1 md:w-1/2 mx-auto rounded-lg shadow-lg"
-          autoplay
-          loop
-          muted
-        >
+        <video class="mx-auto rounded-lg shadow-lg" autoplay loop muted>
           <source src="media/future-finder-2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -152,29 +145,29 @@
         </button>
       </div>
     </section>
-
     <!-- Testimonials section -->
-    <section class="bg-gray-200 py-8 pt-24 text-center flex-1 h-auto w-full overflow-hidden"
-        <div class="container mx-auto px-2 mb-8">
-          <h2 class="text-3xl font-bold text-gray-800 mb-4">Testimonials</h2>
-          <div class="flex flex-wrap mx-2 text-between">
-            <div class="w-full md:w-1/2 lg:w-1/3 px-2 mb-4">
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-2 mb-4">    
-              <div class="bg-white p-6 rounded-lg shadow-lg">
-              <p class="text-gray-700 text-lg mb-4 italic">
+    <section
+      class="bg-gray-200 py-8 pt-24 text-center"
+      style="margin-top: 50px"
+    >
+      <div class="container mx-auto px-2 mb-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Testimonials</h2>
+        <div class="flex flex-wrap mx-2 text-between">
+          <div class="w-full md:w-1/2 lg:w-1/3 px-2 mb-4">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <p class="text-gray-700 text-lg mb-4">
                 "Thank you so much for your time and your questions and guidance
                 you honestly made me think a lot about my path in front of me
                 and what I should prioritize."
               </p>
               <p class="text-gray-900 font-bold">- Aidan</p>
-            </div></div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-2 mb-4"></div>
+            </div>
           </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 px-2 mb-4"></div>
+          <div class="w-full md:w-1/2 lg:w-1/3 px-2 mb-4"></div>
         </div>
       </div>
     </section>
-  </div>
     <!-- End of testimonials section -->
   </body>
 </html>
