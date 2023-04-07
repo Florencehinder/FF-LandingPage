@@ -70,34 +70,11 @@
           >
         </div>
         <div>
-          <form
-            action="https://api.staticforms.xyz/submit"
-            method="post"
-            class="flex items-center border-b border-teal-500 py-2"
-          >
-            <input
-              type="text"
-              name="email"
-              placeholder="Enter your email"
-              class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-            />
-            <input
-              type="hidden"
-              name="accessKey"
-              value="205d72c6-6c48-4fad-951d-abc218764352"
-            />
-            <button
-              type="submit"
-              class="flex-shrink-0 bg-gradient-to-r from-blue-500 to-purple-500 hover:bg-indigo-700 text-white py-2 px-4 rounded text-lg"
-            >
-              Join Waitlist
-            </button>
-            <input
-              type="hidden"
-              name="redirectTo"
-              value="https://futurefinder.app/"
-            />
-          </form>
+          <button
+          type="submit"
+          class="flex-shrink-0 bg-gradient-to-r from-blue-500 to-purple-500 hover:bg-indigo-700 text-white py-2 px-4 rounded text-lg"
+          id="waitlist-button"
+        >Join Waitlist</button>
         </div>
       </div>
     </header>
@@ -176,15 +153,18 @@
     </section>
   </div>
     <!-- End of testimonials section -->
+
+    <!-- Google form embed Start-->
+    <script>
+      const waitlistButton = document.querySelector('#waitlist-button');
+      const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeh_sN7xYugDPgvEgVTYCQNEdfHtGnBTbffVf8oqc0O55WCWg/viewform?embedded=true';
+    
+      waitlistButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.open(googleFormUrl, 'popup', 'width=640,height=415');
+      });
+    </script>  
+        <!-- Google form embed End-->
   </body>
 </html>
 
-<script>
-  const form = document.querySelector('form');
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const input = document.querySelector('input');
-    input.value = 'You are on the waitlist!';
-  });
-</script>
