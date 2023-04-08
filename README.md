@@ -1,4 +1,4 @@
 # futurefinder.app
-Future Finder Career Booking Page
+Future Finder Schools Beta Testing Booking Page
 
-Using material design + tailwind 
+Simple html landing page using material design + tailwind 
