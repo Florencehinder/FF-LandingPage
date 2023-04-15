@@ -34,7 +34,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Future Finder</title>
+    <title>future finder</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
@@ -60,13 +60,13 @@
       <div class="container mx-auto flex items-center justify-between">
         <div class="flex items-center">
           <img
-            class="hidden sm:block w-10 h-10 rounded-full mr-4"
+            class="sm:block w-10 h-10 rounded-full mr-4"
             src="media/future-finder-icon.svg"
             alt="Future Finder Logo"
           />
           <span
             class="hidden sm:block text-2xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
-            >Future Finder</span
+            >future finder</span
           >
         </div>
         <div>
@@ -74,28 +74,22 @@
           type="submit"
           class="flex-shrink-0 bg-gradient-to-r from-blue-500 to-purple-500 hover:bg-indigo-700 text-white py-2 px-4 rounded text-lg"
           id="waitlist-button"
-        >Join Waitlist</button>
+        >find your path</button>
         </div>
       </div>
     </header>
     <div class = "flex flex-col items-center">
     <section class="flex-1 h-auto overflow-hidden">
-      <div class="container mx-auto px-12 mt-60 text-center">
-        <img
-          class="w-40 h-40 rounded-full mx-auto bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
-          src="media/future-finder-icon.svg"
-          alt="Future Finder Logo"
-        />
+      <div class="container mx-auto px-12 mt-40 text-center">
         <h1
           class="text-6xl my-4 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
         >
-          Future Finder
+          find your career path
         </h1>
         <p
           class="text-gray-400 text-3xl mb-8 text-center sm:w-100 md:w-1/2 lg:md:w-1/2 mx-auto"
         >
-          Our AI-powered career assistant helps you explore more career options
-          based on your skills and interests.
+          our questionnaire matches you with in-demand jobs best suited for your personality, skills, and interests.
         </p>
         <video
           class="sm:w-1 md:w-1/2 mx-auto rounded-lg shadow-lg"
@@ -106,27 +100,11 @@
           <source src="media/future-finder-2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-
         <button
-          class="bg-gradient-to-r from-blue-500 to-purple-500 hover:bg-indigo-700 text-white py-4 px-4 rounded mb-20 text-lg mt-14"
-        >
-          <!-- Calendly link widget begin -->
-          <link
-            href="https://assets.calendly.com/assets/external/widget.css"
-            rel="stylesheet"
-          />
-          <script
-            src="https://assets.calendly.com/assets/external/widget.js"
-            type="text/javascript"
-            async
-          ></script>
-          <a
-            href=""
-            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/futuresfinder/30min'});return false;"
-            >Book a free career consultation!</a
-          >
-          <!-- Calendly link widget end -->
-        </button>
+          type="submit"
+          class="flex-shrink-0 bg-gradient-to-r from-blue-500 to-purple-500 hover:bg-indigo-700 mt-14 mb-20 text-white py-2 px-4 rounded text-lg"
+          id="tryfree-button"
+        >try for free!</button>
       </div>
     </section>
 
@@ -157,9 +135,14 @@
     <!-- Google form embed Start-->
     <script>
       const waitlistButton = document.querySelector('#waitlist-button');
-      const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeh_sN7xYugDPgvEgVTYCQNEdfHtGnBTbffVf8oqc0O55WCWg/viewform?embedded=true';
+      const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdYnyVVNjnN-OjaspyqKpZBp4bvSjRAdU7ikShtKRvjJTJGqw/viewform?embedded=true';
     
       waitlistButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.open(googleFormUrl, 'popup', 'width=640,height=415');
+      });
+      const tryfreebutton = document.querySelector('#tryfree-button');
+      tryfreebutton.addEventListener('click', (event) => {
         event.preventDefault();
         window.open(googleFormUrl, 'popup', 'width=640,height=415');
       });
